@@ -1,4 +1,4 @@
- * {
+                * {
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
@@ -73,3 +73,46 @@
             0% { text-shadow: 2px 2px #ff0000, -2px -2px #0000ff; } 
             50% { text-shadow: -2px -2px #ff0000, 2px 2px #0000ff; } 
             100% { text-shadow: 2px 2px #ff0000, -2px -2px #0000ff; } }
+
+            /* Media queries para responsividade em celulares */
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 0.5em;
+                }
+
+                .timer {
+                    font-size: 4em;
+                }
+
+                button {
+                    padding: 0.6rem 1.5rem;
+                    font-size: 1em;
+                }
+
+                .container {
+                    padding: 1.5rem;
+                    margin: 0 1rem;
+                }
+            }
+
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 2em;
+                    margin-bottom: 0.5em;
+                }
+
+                .timer {
+                    font-size: 2.5em;
+                }
+
+                button {
+                    padding: 0.5rem 1.2rem;
+                    font-size: 0.9em;
+                    margin-top: 1.5rem;
+                }
+
+                .container {
+                    padding: 1rem;
+                }
+            }
